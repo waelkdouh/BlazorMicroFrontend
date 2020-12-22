@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="$(BlazorVersion)" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="$(BlazorVersion)" PrivateAssets="all" />
+    <PackageReference Include="System.Net.Http.Json" Version="$(BlazorVersion)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <BlazorWebAssemblyLazyLoad Include="WaelsMagicFeature.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\JanesMagicFeature\JanesMagicFeature.csproj" />
+    <ProjectReference Include="..\WaelsMagicFeature\WaelsMagicFeature.csproj" />
+  </ItemGroup>
+
+
+
+</Project>
